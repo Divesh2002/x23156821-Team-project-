@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the page displayed in the browser tab -->
+    <title>Divesh T-shirt</title>
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link to external JavaScript files,-->
+    <script defer src="scripts.js"></script>
+    <script defer src="cart.js"></script>
+    <script defer src="checkout.js"></script>
+</head>
+<body>
+    <!-- Header section of the page -->
+    <header>
+        <h1>Divesh Tshirt shop</h1>
+        <nav>
+            <!-- Navigation links to other pages -->
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign Up</a>
+        </nav>
+        <div class="cart">
+            <!-- Button to open the cart details -->
+            <button id="cart-button">Cart (0)</button>
+            <!-- Dropdown menu to show cart items -->
+            <div id="cart-details" class="cart-dropdown">
+                <!-- List of cart items -->
+                <ul id="cart-items"></ul>
+                <!-- Total amount in the cart -->
+                <p id="cart-total">Total: $0.00</p>
+                <!-- Button to go to the checkout page -->
+                <button id="checkout-button">Go to Checkout</button>
+            </div>
+        </div>
+    </header>
+    <!-- Main content section of the page -->
+    <main>
+        <h2>Products</h2>
+        <!-- Container for dynamically injected product elements -->
+        <div id="product-container">
+            <!-- Products will be dynamically injected by JavaScript -->
+        </div>
+        <div class="pagination">
+            <!-- Buttons for pagination -->
+            <button id="prev-page" disabled>Previous</button>
+            <button id="next-page">Next</button>
+        </div>
+    </main>
+    <!-- Footer section of the page -->
+    <footer>
+        <p>&copy; Divesh eShop</p>
+    </footer>
+</body>
+</html>

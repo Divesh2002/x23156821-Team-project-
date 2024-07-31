@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- Viewport settings for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the page displayed in the browser tab -->
+    <title>Login</title>
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link to external JavaScript file, deferred until after the document is parsed -->
+    <script defer src="login.js"></script>
+</head>
+<body class="login-page">
+    <!-- Header section of the page -->
+    <header>
+        <h1>Divesh eShop</h1>
+        <nav>
+            <!-- Navigation links to other pages -->
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign Up</a>
+        </nav>
+    </header>
+    <!-- Main content section of the page -->
+    <main>
+        <h2>Login</h2>
+        <!-- Login form -->
+        <form id="login-form">
+            <fieldset>
+                <legend>Login Information</legend>
+
+                <!-- Username input field -->
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" autocomplete="username" required>
+
+                <!-- Password input field -->
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" autocomplete="current-password" required>
+
+                <!-- Submit button for the form -->
+                <button type="submit">Login</button>
+            </fieldset>
+        </form>
+        <!-- Paragraph for displaying response messages -->
+        <p id="response-message"></p>
+    </main>
+    <!-- Footer section of the page -->
+    <footer>
+        <p>&copy; Made by Divesh</p>
+    </footer>
+</body>
+</html>
